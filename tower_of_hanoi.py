@@ -11,3 +11,6 @@ def move(n, source, auxiliary, target):
         return
     # move n - 1 disks from source to auxiliary, so they are out of the way
     move(n - 1, source, target, auxiliary)
+
+    # display our progress
+    print(A, B, C, '\n')
