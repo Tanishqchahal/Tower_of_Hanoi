@@ -14,3 +14,6 @@ def move(n, source, auxiliary, target):
 
     # display our progress
     print(A, B, C, '\n')
+
+    # move the n - 1 disks that we left on auxiliary onto target
+    move(n - 1,  auxiliary, source, target)
