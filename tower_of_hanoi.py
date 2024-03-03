@@ -5,3 +5,7 @@ C = []
 
 # starting configuration
 print(A, "\n")
+
+def move(n, source, auxiliary, target):
+    if n <= 0:
+        return
