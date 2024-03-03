@@ -9,3 +9,5 @@ print(A, "\n")
 def move(n, source, auxiliary, target):
     if n <= 0:
         return
+    # move n - 1 disks from source to auxiliary, so they are out of the way
+    move(n - 1, source, target, auxiliary)
