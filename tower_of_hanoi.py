@@ -14,9 +14,12 @@ def move(n, source, auxiliary, target):
 
     # move the nth disk from source to target
     target.append(source.pop())
-    
+
     # display our progress
     print(A, B, C, '\n')
 
     # move the n - 1 disks that we left on auxiliary onto target
     move(n - 1,  auxiliary, source, target)
+
+# initiate call from source A to target C with auxiliary B
+move(NUMBER_OF_DISKS, A, B, C)
